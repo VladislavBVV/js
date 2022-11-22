@@ -35,16 +35,20 @@ for (let employee = 1; employee <= employees; employee += 1) {
 console.log('общая сумма ЗП',  totalSalary);
 
 
-const min = 0
-const max = 13
+const min = 10
+const max = 50
 let total = 0
 
 for (let index = min; index <= max; index +=1) {
-    console.log(index)
-    total +=  index
-    
-    
+    // console.log(index)
+
+    if (index % 2 !== 0) {
+      console.log('не четное', index);
+      continue;
+    }
+   console.log("четное", index);
+   total += index;
 }
-console.log(total);
+console.log('total: ',total);
 
 
